@@ -1,0 +1,42 @@
+{
+  "name": "webext-base-css",
+  "version": "0.0.0",
+  "description": "Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)",
+  "keywords": [
+    "default",
+    "normalize",
+    "style",
+    "stylesheet",
+    "sanitize",
+    "reset",
+    "dark mode",
+    "browser",
+    "chrome",
+    "firefox",
+    "options",
+    "prefers-color-scheme"
+  ],
+  "repository": "fregante/webext-base-css",
+  "license": "MIT",
+  "files": [
+    "webext-base.css"
+  ],
+  "scripts": {
+    "fix": "npm run test -- --fix",
+    "test": "stylelint webext-base.css"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-xo",
+    "rules": {
+      "declaration-no-important": null,
+      "property-no-vendor-prefix": null,
+      "function-blacklist": [
+        "/^rgb/"
+      ]
+    }
+  },
+  "devDependencies": {
+    "stylelint": "^13.2.1",
+    "stylelint-config-xo": "^0.16.1"
+  }
+}
