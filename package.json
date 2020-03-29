@@ -1,6 +1,6 @@
 {
   "name": "webext-base-css",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)",
   "keywords": [
     "default",
