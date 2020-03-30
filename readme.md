@@ -1,6 +1,6 @@
 # webext-base-css [![][badge-gzip]][link-npm]
 
-  [badge-gzip]: https://img.shields.io/bundlephobia/minzip/webext-base-css.svg?label=gzipped
+  [badge-gzip]: https://img.badgesize.io/fregante/webext-base-css/master/webext-base.css.svg?compression=gzip&label=gzipped
   [link-npm]: https://www.npmjs.com/package/webext-base-css
 
 > Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)
