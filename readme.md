@@ -3,9 +3,15 @@
   [badge-gzip]: https://img.badgesize.io/fregante/webext-base-css/master/webext-base.css.svg?compression=gzip&label=gzipped
   [link-npm]: https://www.npmjs.com/package/webext-base-css
 
-> Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)
+> Extremely minimal "native" stylesheet/setup for Web Extensions’ options pages (also dark mode)
 
 Together with some stylesheets included by the browsers, extends and improves the the `options_ui.chrome_style` setting, including Firefox.
+
+It's meant to look as _native_ as possible, _invisible_. `webext-base-css` is what browsers should offer by default.
+
+| Demo: Chrome with light theme | Firefox with dark theme |
+| --- | --- |
+| ![white](https://user-images.githubusercontent.com/1402241/77975846-8ca1e780-72fb-11ea-8e02-33ab27746beb.png) | ![black](https://user-images.githubusercontent.com/1402241/77975849-8d3a7e00-72fb-11ea-8474-4f8b1f83d6c5.png) |
 
 ## Install
 
