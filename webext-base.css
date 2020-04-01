@@ -1,10 +1,8 @@
 /*! https://npm.im/webext-base-css */
 
-/*
-`:not(*:root)` selectors are Chrome only
-`@-moz-document` rules are Firefox only
-`--in-content-box-background` variables are Firefox only
-*/
+/* Chrome only: :not(*:root) */
+/* Firefox only: @-moz-document */
+/* Firefox only: var(--in-content-*) */
 
 :root {
 	max-width: 700px;
@@ -33,7 +31,7 @@ input[type='checkbox'] {
 }
 
 textarea:not(*:root):focus {
-	/* Missing from Chrome’s style https://github.com/chromium/chromium/blob/6bea0557fe67c9196dd2ec083e95fc5807674c87/extensions/renderer/resources/extension.css#L287 */
+	/* Inexplicably missing from Chrome’s input style https://github.com/chromium/chromium/blob/6bea0557fe/extensions/renderer/resources/extension.css#L287 */
 	border-color: #4d90fe;
 	transition: border-color 200ms;
 }
@@ -51,7 +49,7 @@ hr:not(*:root) {
 	}
 
 	body {
-		min-height: 250px; /* Without this there's a white space in dark mode */
+		min-height: 250px; /* Without this there’s a white space at the bottom in dark mode */
 	}
 
 	body > * {
