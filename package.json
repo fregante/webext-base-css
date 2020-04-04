@@ -21,6 +21,7 @@
   "files": [
     "webext-base.css"
   ],
+  "main": "webext-base.css",
   "scripts": {
     "fix": "npm run test -- --fix",
     "test": "stylelint webext-base.css"
