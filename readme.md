@@ -30,6 +30,32 @@ npm install webext-base-css
 <link rel="stylesheet" href="your-own-stylesheet-if-necessary.css">
 ```
 
+💡 Tip: Also use [webext-options-sync](https://github.com/fregante/webext-options-sync) to manage and autosave your extension's options.
+
+### Usage with a bundler
+
+Depending on how your bundler is configured, you might be able to use one of these to import the module directly from `node_modules`. If you have issues or have a better solution, please send a PR or open an issue.
+
+```html
+<!-- From options.html -->
+<link rel="stylesheet" href="../node_modules/webext-base-css/webext-base.css">
+```
+
+```js
+// From options.js
+import 'webext-base-css';
+```
+
+```css
+/* From options.css or .scss */
+@import 'webext-base-css';
+@import '~webext-base-css';
+@import '~webext-base-css/webext-base.css';
+@use 'webext-base-css';
+```
+
+### Full example
+
 Here's a minimal but full `options.html` example page:
 
 ```html
@@ -53,8 +79,6 @@ Here's a minimal but full `options.html` example page:
 </form>
 <script src="options.js"></script>
 ```
-
-Don't forget to also use [webext-options-sync](https://github.com/fregante/webext-options-sync) to manage and autosave your extension's options.
 
 ## Related
 
