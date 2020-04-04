@@ -43,6 +43,10 @@ hr:not(*:root) {
 	border-bottom: 1px solid #aaa4;
 }
 
+img {
+	vertical-align: middle;
+}
+
 @-moz-document url-prefix('') {
 	:root {
 		background-color: #fff;
