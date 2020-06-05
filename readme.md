@@ -30,6 +30,17 @@ npm install webext-base-css
 <link rel="stylesheet" href="your-own-stylesheet-if-necessary.css">
 ```
 
+You'll also have to set `chrome_style: true` in your manifest.json:
+
+```json
+{
+        "options_ui": {
+                "page": "options.html",
+                "chrome_style": true 
+        }
+}
+```
+
 💡 Tip: Also use [webext-options-sync](https://github.com/fregante/webext-options-sync) to manage and autosave your extension's options.
 
 ### Usage with a bundler
