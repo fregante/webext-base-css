@@ -71,7 +71,8 @@ img {
 		background-color: var(--in-content-box-background, #292a2d);
 	}
 
-	body {
+	body,
+	h3 { /* Chrome #3 */
 		color: var(--in-content-page-color, #e8eaed);
 	}
 
