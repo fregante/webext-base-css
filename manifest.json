@@ -1,0 +1,10 @@
+{
+	"____": "This is just a demo extension. Load it into your browser to test out this stylesheet.",
+	"name": "webext-base-css demo",
+	"manifest_version": 2,
+	"version": "0.0.0",
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	}
+}
