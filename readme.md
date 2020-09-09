@@ -9,6 +9,8 @@ Together with some stylesheets included by the browsers, extends and improves th
 
 It's meant to look as _native_ as possible, _invisible_. `webext-base-css` is what browsers should offer by default.
 
+Look at the demo [options.html](options.html) for the suggested markup (it's basic and not really enforced.)
+
 | Demo: Chrome with light theme | Firefox with dark theme |
 | --- | --- |
 | ![white](https://user-images.githubusercontent.com/1402241/77975846-8ca1e780-72fb-11ea-8e02-33ab27746beb.png) | ![black](https://user-images.githubusercontent.com/1402241/77975849-8d3a7e00-72fb-11ea-8474-4f8b1f83d6c5.png) |
