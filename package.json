@@ -1,43 +1,43 @@
 {
-  "name": "webext-base-css",
-  "version": "1.1.0",
-  "description": "Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)",
-  "keywords": [
-    "default",
-    "normalize",
-    "style",
-    "stylesheet",
-    "sanitize",
-    "reset",
-    "dark mode",
-    "browser",
-    "chrome",
-    "firefox",
-    "options",
-    "prefers-color-scheme"
-  ],
-  "repository": "fregante/webext-base-css",
-  "license": "MIT",
-  "files": [
-    "webext-base.css"
-  ],
-  "main": "webext-base.css",
-  "scripts": {
-    "fix": "npm run test -- --fix",
-    "test": "stylelint webext-base.css"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-xo",
-    "rules": {
-      "declaration-no-important": null,
-      "property-no-vendor-prefix": null,
-      "function-blacklist": [
-        "/^rgb/"
-      ]
-    }
-  },
-  "devDependencies": {
-    "stylelint": "^13.2.1",
-    "stylelint-config-xo": "^0.16.1"
-  }
+	"name": "webext-base-css",
+	"version": "1.1.0",
+	"description": "Extremely minimal stylesheet/setup for Web Extensions’ options pages (also dark mode)",
+	"keywords": [
+		"default",
+		"normalize",
+		"style",
+		"stylesheet",
+		"sanitize",
+		"reset",
+		"dark mode",
+		"browser",
+		"chrome",
+		"firefox",
+		"options",
+		"prefers-color-scheme"
+	],
+	"repository": "fregante/webext-base-css",
+	"license": "MIT",
+	"main": "webext-base.css",
+	"files": [
+		"webext-base.css"
+	],
+	"scripts": {
+		"fix": "stylelint webext-base.css --fix",
+		"test": "stylelint webext-base.css"
+	},
+	"stylelint": {
+		"extends": "stylelint-config-xo",
+		"rules": {
+			"declaration-no-important": null,
+			"property-no-vendor-prefix": null,
+			"function-blacklist": [
+				"/^rgb/"
+			]
+		}
+	},
+	"devDependencies": {
+		"stylelint": "^13.7.0",
+		"stylelint-config-xo": "^0.19.0"
+	}
 }

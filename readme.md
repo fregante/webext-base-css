@@ -1,7 +1,7 @@
 # webext-base-css [![][badge-gzip]][link-npm]
 
-  [badge-gzip]: https://img.badgesize.io/fregante/webext-base-css/master/webext-base.css.svg?compression=gzip&label=gzipped
-  [link-npm]: https://www.npmjs.com/package/webext-base-css
+[badge-gzip]: https://img.badgesize.io/fregante/webext-base-css/master/webext-base.css.svg?compression=gzip&label=gzipped
+[link-npm]: https://www.npmjs.com/package/webext-base-css
 
 > Extremely minimal "native" stylesheet/setup for Web Extensions’ options pages (also dark mode)
 
@@ -34,10 +34,10 @@ You'll also have to set `chrome_style: true` in your manifest.json:
 
 ```json
 {
-        "options_ui": {
-                "page": "options.html",
-                "chrome_style": true 
-        }
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	}
 }
 ```
 
@@ -93,6 +93,6 @@ Here's a minimal but full `options.html` example page:
 
 ## Related
 
-* [webext-storage-cache](https://github.com/fregante/webext-storage-cache) - Map-like promised cache storage with expiration. Chrome and Firefox
-* [webext-dynamic-content-scripts](https://github.com/fregante/webext-dynamic-content-scripts) - Automatically registers your content_scripts on domains added via permission.request
-* [Awesome-WebExtensions](https://github.com/fregante/Awesome-WebExtensions) - A curated list of awesome resources for WebExtensions development.
+- [webext-storage-cache](https://github.com/fregante/webext-storage-cache) - Map-like promised cache storage with expiration. Chrome and Firefox
+- [webext-dynamic-content-scripts](https://github.com/fregante/webext-dynamic-content-scripts) - Automatically registers your content_scripts on domains added via permission.request
+- [Awesome-WebExtensions](https://github.com/fregante/Awesome-WebExtensions) - A curated list of awesome resources for WebExtensions development.
