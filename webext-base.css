@@ -4,6 +4,8 @@
 /* Firefox only: @-moz-document */
 /* Firefox only: var(--in-content-*) */
 
+@import 'chrome://global/skin/in-content/common.css'; /* Firefox-only */
+
 :root {
 	max-width: 700px;
 	margin: auto;
