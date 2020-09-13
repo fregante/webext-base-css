@@ -27,7 +27,6 @@ npm install webext-base-css
 
 ```html
 <!-- The first one is included in Firefox. It doesn't hurt Chrome though, leave it there for both -->
-<link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
 <link rel="stylesheet" href="webext-base.css">
 <link rel="stylesheet" href="your-own-stylesheet-if-necessary.css">
 ```
@@ -75,7 +74,6 @@ Here's a minimal but full `options.html` example page:
 <!doctype html>
 <meta charset="utf-8">
 <title>Options</title>
-<link rel="stylesheet" href="chrome://global/skin/in-content/common.css">
 <link rel="stylesheet" href="webext-base.css">
 <link rel="stylesheet" href="options.css">
 <form>
