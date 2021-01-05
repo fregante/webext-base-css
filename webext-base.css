@@ -3,6 +3,7 @@
 /* Chrome only: :not(*:root) */
 /* Firefox only: @-moz-document */
 /* Firefox only: var(--in-content-*) */
+/* Safari only: _::-webkit-full-page-media */
 
 @import 'chrome://global/skin/in-content/common.css'; /* Firefox-only */
 
@@ -47,6 +48,27 @@ hr:not(*:root) {
 
 img {
 	vertical-align: middle;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root {
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif, 'Apple Color Emoji';
+}
+
+_::-webkit-full-page-media,
+_:future,
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='text'],
+input[type='url'],
+input:not([type]),
+textarea {
+	border: solid 1px #888;
+	padding: 0.4em;
+	font: inherit;
+	-webkit-appearance: none;
 }
 
 @-moz-document url-prefix('') {
