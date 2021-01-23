@@ -1,6 +1,5 @@
 /*! https://npm.im/webext-base-css */
 
-/* Chrome only: :not(*:root) */
 /* Firefox only: @-moz-document */
 /* Firefox only: var(--in-content-*) */
 /* Safari only: _::-webkit-full-page-media */
@@ -8,8 +7,14 @@
 @import 'chrome://global/skin/in-content/common.css'; /* Firefox-only */
 
 :root {
+	--body-margin-h: 8px;
 	max-width: 700px;
 	margin: auto;
+}
+
+body {
+	margin-left: var(--body-margin-h);
+	margin-right: var(--body-margin-h);
 }
 
 /* Selector matches Firefox’ */
@@ -33,15 +38,15 @@ input[type='checkbox'] {
 	vertical-align: -0.15em;
 }
 
-textarea:not(*:root):focus {
+textarea:focus {
 	/* Inexplicably missing from Chrome’s input style https://github.com/chromium/chromium/blob/6bea0557fe/extensions/renderer/resources/extension.css#L287 */
 	border-color: #4d90fe;
 	transition: border-color 200ms;
 }
 
-hr:not(*:root) {
-	margin-right: -17px;
-	margin-left: -17px;
+hr {
+	margin-right: calc(-1 * var(--body-margin-h));
+	margin-left: calc(-1 * var(--body-margin-h));
 	border: none;
 	border-bottom: 1px solid #aaa4;
 }
@@ -73,6 +78,7 @@ textarea {
 
 @-moz-document url-prefix('') {
 	:root {
+		--body-margin-h: 6px; /* Must be a variable so <hr>’s margin is changed too */
 		background-color: #fff;
 	}
 
@@ -81,8 +87,8 @@ textarea {
 	}
 
 	body > * {
-		margin-left: 6px;
-		margin-right: 6px;
+		margin-left: var(--body-margin-h);
+		margin-right: var(--body-margin-h);
 	}
 
 	input[type='checkbox'] {
