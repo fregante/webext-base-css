@@ -26,7 +26,6 @@ npm install webext-base-css
 ## Usage
 
 ```html
-<!-- The first one is included in Firefox. It doesn't hurt Chrome though, leave it there for both -->
 <link rel="stylesheet" href="webext-base.css">
 <link rel="stylesheet" href="your-own-stylesheet-if-necessary.css">
 ```
@@ -50,7 +49,7 @@ Depending on how your bundler is configured, you might be able to use one of the
 
 ```html
 <!-- From options.html -->
-<link rel="stylesheet" href="../node_modules/webext-base-css/webext-base.css">
+<link rel="stylesheet" href="./node_modules/webext-base-css/webext-base.css">
 ```
 
 ```js
@@ -96,3 +95,4 @@ Here's a minimal but full `options.html` example page:
 - [webext-storage-cache](https://github.com/fregante/webext-storage-cache) - Map-like promised cache storage with expiration. Chrome and Firefox
 - [webext-dynamic-content-scripts](https://github.com/fregante/webext-dynamic-content-scripts) - Automatically registers your content_scripts on domains added via permission.request
 - [Awesome-WebExtensions](https://github.com/fregante/Awesome-WebExtensions) - A curated list of awesome resources for WebExtensions development.
+- [More…](https://github.dihe.moe/fregante/webext-fun)
