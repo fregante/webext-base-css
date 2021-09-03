@@ -38,7 +38,7 @@
 		}
 	},
 	"devDependencies": {
-		"stylelint": "^13.8.0",
+		"stylelint": "^13.13.1",
 		"stylelint-config-xo": "^0.20.0"
 	}
 }
