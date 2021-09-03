@@ -7,12 +7,13 @@
 @import 'chrome://global/skin/in-content/common.css'; /* Firefox-only */
 
 :root {
-	--body-margin-h: 8px;
+	--background-color-for-chrome: #292a2d;
 	max-width: 700px;
 	margin: auto;
 }
 
 body {
+	--body-margin-h: 8px;
 	margin-left: var(--body-margin-h);
 	margin-right: var(--body-margin-h);
 }
@@ -77,12 +78,14 @@ textarea {
 }
 
 @-moz-document url-prefix('') {
-	:root {
-		--body-margin-h: 6px; /* Must be a variable so <hr>’s margin is changed too */
-		background-color: #fff;
-	}
-
+	:root, /* Visible on a options_page */
 	body {
+		--body-margin-h: 6px; /* Must be a variable so <hr>’s margin is changed too */ /* Visible on a options_page and options_ui */
+		color: var(--in-content-page-color);
+
+		/* Also supports dark themes in Firefox */
+		/* !important is to override the dark-mode setting for Chrome below */
+		background-color: var(--in-content-box-background) !important;
 		min-height: 250px; /* Without this there’s a white space at the bottom in dark mode */
 	}
 
@@ -98,7 +101,7 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		background-color: var(--in-content-box-background, #292a2d);
+		background-color: var(--background-color-for-chrome);
 	}
 
 	body,
