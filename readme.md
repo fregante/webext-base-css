@@ -95,4 +95,4 @@ Here's a minimal but full `options.html` example page:
 - [webext-storage-cache](https://github.com/fregante/webext-storage-cache) - Map-like promised cache storage with expiration. Chrome and Firefox
 - [webext-dynamic-content-scripts](https://github.com/fregante/webext-dynamic-content-scripts) - Automatically registers your content_scripts on domains added via permission.request
 - [Awesome-WebExtensions](https://github.com/fregante/Awesome-WebExtensions) - A curated list of awesome resources for WebExtensions development.
-- [More…](https://github.dihe.moe/fregante/webext-fun)
+- [More…](https://github.com/fregante/webext-fun)
