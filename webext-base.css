@@ -101,6 +101,7 @@ textarea {
 
 @media (prefers-color-scheme: dark) {
 	:root {
+		color-scheme: dark;
 		background-color: var(--background-color-for-chrome);
 	}
 
