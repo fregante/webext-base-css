@@ -17,6 +17,7 @@
 		"prefers-color-scheme"
 	],
 	"repository": "fregante/webext-base-css",
+	"funding": "https://github.com/sponsors/fregante",
 	"license": "MIT",
 	"main": "webext-base.css",
 	"files": [
@@ -38,7 +39,7 @@
 		}
 	},
 	"devDependencies": {
-		"stylelint": "^13.13.1",
-		"stylelint-config-xo": "^0.20.0"
+		"stylelint": "^14.5.3",
+		"stylelint-config-xo": "^0.20.1"
 	}
 }
