@@ -31,15 +31,11 @@
 		"extends": "stylelint-config-xo",
 		"rules": {
 			"declaration-no-important": null,
-			"property-no-vendor-prefix": null,
-			"selector-type-no-unknown": null,
-			"function-disallowed-list": [
-				"/^rgb/"
-			]
+			"selector-type-no-unknown": null
 		}
 	},
 	"devDependencies": {
-		"stylelint": "^14.5.3",
-		"stylelint-config-xo": "^0.20.1"
+		"stylelint": "^14.9.1",
+		"stylelint-config-xo": "^0.21.0"
 	}
 }
