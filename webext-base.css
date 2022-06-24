@@ -2,6 +2,7 @@
 
 /* Firefox only: @-moz-document */
 /* Firefox only: var(--in-content-*) */
+/* Chrome only: -webkit-hyphens */
 /* Safari only: _::-webkit-full-page-media */
 
 @import 'chrome://global/skin/in-content/common.css'; /* Firefox-only */
@@ -39,10 +40,12 @@ input[type='checkbox'] {
 	vertical-align: -0.15em;
 }
 
-textarea:focus {
-	/* Inexplicably missing from Chrome’s input style https://github.com/chromium/chromium/blob/6bea0557fe/extensions/renderer/resources/extension.css#L287 */
-	border-color: #4d90fe;
-	transition: border-color 200ms;
+@supports (not (-webkit-hyphens:none)) and (not (-moz-appearance:none)) and (list-style-type:'*') {
+	textarea:focus {
+		/* Inexplicably missing from Chrome’s input style https://github.com/chromium/chromium/blob/6bea0557fe/extensions/renderer/resources/extension.css#L287 */
+		border-color: #4d90fe;
+		transition: border-color 200ms;
+	}
 }
 
 hr {
