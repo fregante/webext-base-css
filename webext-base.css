@@ -6,7 +6,7 @@
 /* Safari only: _::-webkit-full-page-media */
 
 /* webpackIgnore: true */
-@import 'chrome://global/skin/in-content/common.css' (min--moz-device-pixel-ratio:0); /* Firefox-only */
+@import url('chrome://global/skin/in-content/common.css') (min--moz-device-pixel-ratio:0); /* Firefox-only */
 
 :root {
 	--background-color-for-chrome: #292a2d;
