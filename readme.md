@@ -59,9 +59,11 @@ import 'webext-base-css';
 
 ```css
 /* From options.css or .scss */
+/* Pick one, it depends on your bundler/config */
 @import 'webext-base-css';
 @import '~webext-base-css';
 @import '~webext-base-css/webext-base.css';
+@import 'npm:webext-base-css'; /* Parcel */
 @use 'webext-base-css';
 ```
 
