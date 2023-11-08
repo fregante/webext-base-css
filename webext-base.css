@@ -118,9 +118,9 @@ textarea {
 		color: var(--in-content-link-color, #8ab4f8);
 	}
 
-        a:active {
-                color: #b6d3f9;
-        }
+	a:active {
+		color: #b6d3f9;
+	}
 
 	input[type='number'],
 	input[type='password'],
