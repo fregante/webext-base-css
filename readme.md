@@ -89,6 +89,17 @@ Here's a minimal but full `options.html` example page:
 <script src="options.js"></script>
 ```
 
+## Extras
+
+There are some extra classes you can use:
+
+- `.monospace-field` for `<input>` and `<textarea>` to have a monospace font
+
+## Tips
+
+- Use the `<input size="10">` to define the width of `input` fields, or else they're now set to `100%` by default.
+- Use `<link rel="stylesheet" href="chrome://global/skin/in-content/common.css">` if you want to use Firefox's native style, but this means you'll have to handle the inconsistencies between web browsers. This used to be included in <code>webext-base-css</code> v1.
+
 ## Related
 
 - [webext-storage-cache](https://github.com/fregante/webext-storage-cache) - Map-like promised cache storage with expiration. Chrome and Firefox
