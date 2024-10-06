@@ -5,8 +5,6 @@
 
 > Extremely minimal "native" stylesheet/setup for Web Extensions’ options pages (also dark mode)
 
-Together with some stylesheets included by the browsers, extends and improves the the `options_ui.chrome_style` setting, including Firefox.
-
 It's meant to look as _native_ as possible, _invisible_. `webext-base-css` is what browsers should offer by default.
 
 Look at the demo [options.html](options.html) for the suggested markup (it's basic and not really enforced.)
@@ -30,13 +28,12 @@ npm install webext-base-css
 <link rel="stylesheet" href="your-own-stylesheet-if-necessary.css">
 ```
 
-You'll also have to set `chrome_style: true` in your manifest.json:
+And in your manifest.json:
 
 ```json
 {
 	"options_ui": {
 		"page": "options.html",
-		"chrome_style": true
 	}
 }
 ```
