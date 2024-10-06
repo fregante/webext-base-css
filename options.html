@@ -2,19 +2,17 @@
 <head>
 	<meta charset="utf-8">
 	<title>Demo</title>
-	<style>
-		/* These 2 are for local testing only, do not use, they're normally added by browser_style */
-		@import 'chrome://browser/content/extension.css';
-		@import 'chrome://browser/content/extension-mac.css';
-	</style>
 	<link rel="stylesheet" href="webext-base.css">
 </head>
 
-<h1>Heading</h1>
+<h1>Heading 🤝</h1>
 
 <p>
 	Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ullam
-	asperiores eum quo? Debitis esse quasi consequuntur voluptates! Ex
+	asperiores eum quo? S<kbd>kbd</kbd>-<kbd>toilet</kbd>
+</p>
+<hr>
+<p> Debitis esse quasi consequuntur voluptates! Ex
 	exercitationem optio voluptatibus at nisi labore praesentium dignissimos porro
 	soluta asperiores!
 </p>
@@ -29,9 +27,20 @@
 			type="text"
 			spellcheck="false"
 			autocomplete="off"
-			placeholder="input[type=text]"
+			placeholder="input[type=text][size=20]"
 			required
 			pattern="\d"
+			size="20"
+		/>
+	</label>
+</p>
+
+<p>
+	<label>
+		<strong>Unlimited type-less one-liner:</strong><br>
+		<input
+			name="my-limited-text"
+			placeholder="input"
 		/>
 	</label>
 </p>
@@ -50,7 +59,7 @@
 	</label>
 </p>
 
-<h4>Heading 4</h4>
+<h3>Heading 3</h3>
 
 <p>
 	<label>
@@ -63,7 +72,7 @@
 	</label>
 </p>
 
-<h5>Heading 5</h5>
+<h3>Heading 3</h3>
 
 <p>
 	<label>
@@ -76,7 +85,7 @@
 	</label>
 </p>
 
-<h6>Heading 6</h6>
+<h3>Heading 3</h3>
 
 <p>
 	<label>
@@ -86,4 +95,10 @@
 			<option value="∞">Last</option>
 		</select>
 	</label>
+</p>
+
+<h3>Heading 3</h3>
+
+<p>
+	<button>Click me</button> or <a href="https://example.com">here</a> but definitely not <button disabled>not here</button>.
 </p>
