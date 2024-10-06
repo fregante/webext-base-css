@@ -4,43 +4,58 @@
 	color-scheme: light dark;
 	max-width: 700px;
 	margin: auto;
-	font:
-		16px/1.5 -apple-system,
-		BlinkMacSystemFont,
-		sans-serif,
-		'Apple Color Emoji';
+}
+
+body {
+	/* Must be on body because both browsers have `font-size: 75%` here */
+	font: 16px/1.5 system-ui, sans-serif;
 }
 
 
+select,
+textarea,
 input:where(
-[type='number'],
-[type='password'],
-[type='search'],
-[type='text'],
-[type='url'],
-:not([type])
+	[type='number'],
+	[type='password'],
+	[type='search'],
+	[type='text'],
+	[type='url'],
+	:not([type])
 ) {
 	box-sizing: border-box;
-	font-size: 1em;
+	font: inherit;
 	line-height: 2;
 }
 
+textarea,
 input:where(
-[type='number'],
-[type='password'],
-[type='search'],
-[type='text'],
-[type='url'],
-:not([type])
-):not([size]),
-textarea {
+	[type='number'],
+	[type='password'],
+	[type='search'],
+	[type='text'],
+	[type='url'],
+	:not([type])
+):not([size]) {
 	width: 100%;
+}
+
+textarea {
+	line-height: 1.5; /* Reset it because 2 is too big */
+	resize: vertical;
+	min-height: 3lh;
+	/* stylelint-disable-next-line property-no-unknown */
+	field-sizing: content;
+}
+
+input[type='submit'],
+button {
+	font: inherit;
 }
 
 hr {
 	border: none;
-	border-bottom: 1px solid currentColor;
-	opacity: 0.5;
+	border-bottom: 1px solid currentcolor;
+	opacity: 50%;
 }
 
 img {
