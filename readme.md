@@ -93,7 +93,7 @@ Here's a minimal but full `options.html` example page:
 
 There are some extra classes you can use:
 
-- `.monospace-field` for `<input>` and `<textarea>` to have a monospace font
+- `.text-monospace` ideal for for `<input>` and `<textarea>` to have a monospace font
 
 ## Tips
 

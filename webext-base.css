@@ -11,7 +11,6 @@ body {
 	font: 16px/1.5 system-ui, sans-serif;
 }
 
-
 select,
 textarea,
 input:where(
@@ -75,7 +74,7 @@ kbd {
 	box-shadow: inset 0 -1px 0 #d1d5da;
 }
 
-
+/* Firefox-only style */
 @-moz-document url-prefix('') {
 	@media (prefers-color-scheme: dark) {
 		:root {
@@ -84,6 +83,24 @@ kbd {
 	}
 }
 
+/* Safari-specific style */
+@supports (-webkit-text-security: none) {
+	:root {
+		/* Textfields on Safari desktop are too thin, they expect a darker background */
+		background-color: Window;
+	}
+}
+/* iOS/iPadOS-specific style */
+@supports (-webkit-text-size-adjust: none) {
+	@media (prefers-color-scheme: dark) {
+		:root {
+			/* Safari iOS has a black background */
+			background-color: #1e1e1e;
+		}
+	}
+}
+
+.text-monospace,
 .monospace-field {
 	/* Same as GitHub style for `code` */
 	font-family:
