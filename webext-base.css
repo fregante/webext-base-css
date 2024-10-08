@@ -83,13 +83,6 @@ kbd {
 	}
 }
 
-/* Safari-specific style */
-@supports (-webkit-text-security: none) {
-	:root {
-		/* Textfields on Safari desktop are too thin, they expect a darker background */
-		background-color: Window;
-	}
-}
 /* iOS/iPadOS-specific style */
 @supports (-webkit-text-size-adjust: none) {
 	@media (prefers-color-scheme: dark) {
