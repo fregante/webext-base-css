@@ -1,3 +1,3 @@
-document.addEventListener('dblclick', function() {
-    document.documentElement.classList.toggle('webext-base-css-modal');
+document.addEventListener('dblclick', () => {
+	document.documentElement.classList.toggle('webext-base-css-modal');
 });

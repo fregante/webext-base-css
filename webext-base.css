@@ -76,6 +76,7 @@ kbd {
 }
 
 /* Firefox-only style */
+/* stylelint-disable-next-line at-rule-no-vendor-prefix */
 @-moz-document url-prefix('') {
 	@media (prefers-color-scheme: dark) {
 		:root {
