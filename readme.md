@@ -94,6 +94,8 @@ Here's a minimal but full `options.html` example page:
 There are some extra classes you can use:
 
 - `.text-monospace` ideal for for `<input>` and `<textarea>` to have a monospace font
+- `webext-base-css-modal` can be applied to HTML if you have a small options page but don't want to use `options_ui`. See the [what it looks like.](https://github.com/fregante/webext-base-css/pull/21)
+
 
 ## Tips
 
