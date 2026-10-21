@@ -24,18 +24,10 @@
 		"webext-base.css"
 	],
 	"scripts": {
-		"fix": "stylelint webext-base.css --fix",
-		"test": "stylelint webext-base.css"
-	},
-	"stylelint": {
-		"extends": "stylelint-config-xo",
-		"rules": {
-			"declaration-no-important": null,
-			"selector-type-no-unknown": null
-		}
+		"fix": "xo webext-base.css --fix",
+		"test": "xo webext-base.css"
 	},
 	"devDependencies": {
-		"stylelint": "^16.11.0",
-		"stylelint-config-xo": "^1.0.2"
+		"xo": "^5.0.1"
 	}
 }
